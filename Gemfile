@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.0.0'
+# Use bcrypt for hashed password
+gem 'bcrypt', '3.1.11'
 # Use Bootstrap for CSS
 gem 'bootstrap-sass', '3.3.6'
 # Use SCSS for stylesheets
