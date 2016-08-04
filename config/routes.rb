@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  resources :users
+  
   # You can have the root of your site routed with "root"
   root 'static_pages#home'
 
@@ -10,6 +12,8 @@ Rails.application.routes.draw do
   get '/contact', to: 'static_pages#contact'
   
   get '/signup', to: 'users#new'
+  
+  post '/signup', to: 'users#create'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
